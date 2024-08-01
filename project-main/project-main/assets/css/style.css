@@ -264,13 +264,15 @@ a.navlinks:hover {
   justify-items: center;
 }
 .fa {
-  padding: 20px;
-  font-size: 30px;
-  width: 50px;
+  padding: 7px;
+  font-size: 15px;
+  width: 30px;
+  height: 30px;
   text-align: center;
   text-decoration: none;
   margin: 5px 2px;
-  border-radius: 2px;
+  border-radius: 50%;
+
 }
 
 .fa:hover {
@@ -293,9 +295,57 @@ a.navlinks:hover {
 
 .footer-A{
   width: 100%;
-  height: 300px;
-  background-color: #125688;
+  height: 100px;
+  background-color:rgb(208, 211, 212 );
+  justify-content: center;
+  align-items: center;
+  padding:10px;
+  border-top: 3px solid #fff;
 }
-.footerA-icons li{
+.footerA-icons{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  height: 70%;
+
+}
+.small-bold-text {
+  font-weight: 600; 
+  font-size: 15px;   
+}
+.footerA-icons ul{
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+}
+.footerA-icons ul li {
+  margin: 0 3px; 
+}
+.footerA-page{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  height:30%;
+}
+/* .footer-B{
+  display:flex;
   
+} */
+
+.footer-B-page{
+  width:100%;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer-B-addContent{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  width: 100%;
+}
+.footer-B-links{
+  display: flex;
+  justify-content: center;
 }
