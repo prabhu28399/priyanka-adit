@@ -256,12 +256,13 @@ a.navlinks:hover {
  width: 45%;
 }
 
-/* footer */
+/*                   footer section starteddddd */
 
 .footer{
   justify-content: center;
   align-items: center;
   justify-items: center;
+
 }
 .fa {
   padding: 7px;
@@ -270,7 +271,6 @@ a.navlinks:hover {
   height: 30px;
   text-align: center;
   text-decoration: none;
-  margin: 5px 2px;
   border-radius: 50%;
 
 }
@@ -292,21 +292,21 @@ a.navlinks:hover {
   background: #125688;
   color: white;
 }
-
+              /* footer A section is started */
 .footer-A{
   width: 100%;
-  height: 100px;
+  height: 10%;
   background-color:rgb(208, 211, 212 );
   justify-content: center;
   align-items: center;
-  padding:10px;
-  border-top: 3px solid #fff;
+  margin-bottom:3px;
+  position: relative;
 }
 .footerA-icons{
   display:flex;
   justify-content: center;
   align-items: center;
-  height: 70%;
+  padding-top:20px;
 
 }
 .small-bold-text {
@@ -321,16 +321,18 @@ a.navlinks:hover {
 .footerA-icons ul li {
   margin: 0 3px; 
 }
-.footerA-page{
+.footer-A-page{
   display:flex;
   justify-content: center;
   align-items: center;
-  height:30%;
+ 
 }
-/* .footer-B{
-  display:flex;
+/*                    footer b section starting */
+.footer-B{
+  background-color: #405788;
+  height: 90%;
   
-} */
+}
 
 .footer-B-page{
   width:100%;
@@ -338,14 +340,74 @@ a.navlinks:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+ 
+
 }
 .footer-B-addContent{
   display: flex;
+  
+  gap: 10px;
   justify-content: center;
   flex-direction: row;
   width: 100%;
+  padding: -40px;
+ 
+}
+.footer-B-addContent-div{
+  background-color: white;
+  height: 50px;
+  border-radius: 6px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.footer-B-addcontent-div-1{
+  width: 65px;
+}
+.footer-B-addcontent-div-2{
+width: 120px;
+}
+.footer-B-addcontent-div-3{
+  width: 105px;
+}
+.footer-B-addcontent-div-4{
+  width: 80px;
+}
+.footer-B-addcontent-div-5{
+  width: 80px;
+}
+.footer-B-addcontent-div-6{
+  width: 115px;
+}
+.footer-B-addcontent-div-7{
+  width: 125px;
+}
+
+
+.footer-B-logo{
+  height:40px;
+  border-radius:5px;
+
 }
 .footer-B-links{
   display: flex;
   justify-content: center;
+  color : white;
+}
+.footer-B-links a{
+  color: white;
+  position: relative;
+  text-decoration: none;
+  font-size: small;
+  margin : 0 10px;
+  font-weight: 600;
+
+}
+
+.footer-B-links a:not(:last-child)::after {
+  content: "|"; 
+  position: absolute;
+  right: -10;
+  color: white; 
+  padding-left: 10px;
 }
