@@ -256,7 +256,7 @@ a.navlinks:hover {
  width: 45%;
 }
 
-/*                   footer section starteddddd */
+/*footer section starteddddd */
 
 .footer{
   justify-content: center;
@@ -327,7 +327,7 @@ a.navlinks:hover {
   align-items: center;
  
 }
-/*                    footer b section starting */
+/*footer B section starting */
 .footer-B{
   background-color: #405788;
   height: 90%;
@@ -340,12 +340,12 @@ a.navlinks:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
- 
-
 }
+.footer-B-page span{
+  margin-left:35%;
+} 
 .footer-B-addContent{
   display: flex;
-  
   gap: 10px;
   justify-content: center;
   flex-direction: row;
@@ -387,7 +387,6 @@ width: 120px;
 .footer-B-logo{
   height:40px;
   border-radius:5px;
-
 }
 .footer-B-links{
   display: flex;
@@ -411,3 +410,91 @@ width: 120px;
   color: white; 
   padding-left: 10px;
 }
+
+/* this is for mobile page  */
+ @media (max-width: 768px) {
+  .footer-A, .footer-B {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 15px;
+  }
+  .footer-b-page p span{
+    margin-left:30%;
+  }
+  .footer-B-links {
+    display: block;
+    width: 100%;
+    gap: 1px;
+    font-size: 2%;
+   }
+   .footer-B-page span{
+    margin-left:8%;
+  } 
+
+
+  .footer-B-addContent{ 
+    width:768px;
+    margin-left:-197px;
+    gap: 2px;
+}
+.footer-B-addContent-div{
+  height: 25px;
+}
+.footer-B-logo{
+  height:20px;
+  border-radius:5px;
+}
+
+.footer-B-addcontent-div-1{
+  width: 35px;
+}
+.footer-B-addcontent-div-2{
+width: 60px;
+}
+.footer-B-addcontent-div-3{
+  width: 55px;
+}
+.footer-B-addcontent-div-4{
+  width: 40px;
+}
+.footer-B-addcontent-div-5{
+  width: 40px;
+}
+.footer-B-addcontent-div-6{
+  width: 55px;
+}
+.footer-B-addcontent-div-7{
+  width: 70px;
+}
+} 
+/* the ending of mobile responsive page  */
+
+/* 769px — 1024px: Small screens, laptops */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .footer-A,
+  .footer-B {
+    flex-direction: row;
+    align-items: flex-start;
+    text-align: left;
+    font-size: 15px;
+  }
+  .footer-B-links {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    font-size: 15px;
+  }
+  .footer-B-addContent {
+    width: 100%;
+    margin-left: 0;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 15px;
+  }
+  .footer-B-addContent-div {
+    width: auto;
+  }
+}
+
+/* end of footer part  */

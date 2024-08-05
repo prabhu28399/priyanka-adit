@@ -5,100 +5,250 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        /* Default styles for desktop */
-        .footer {
-            width: 100%;
-            background-color: #2c2c2c;
-            color: white;
-            padding: 20px;
-        }
         
-        .footer-A, .footer-B {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 10px 0;
-        }
-        
-        .footerA-icons ul {
-            display: flex;
-            list-style: none;
-        }
-        
-        .footerA-icons li {
-            margin-right: 10px;
-        }
-        
-        .footer-A-page p {
-            max-width: 600px;
-        }
-        
-        .footer-B-addContent {
-            display: flex;
-            justify-content: space-between;
-        }
-        
-        .footer-B-addContent-div {
-            margin-right: 10px;
-        }
-        
-        .footer-B-links a {
-            margin-right: 15px;
-            color: #f1ef49;
-            text-decoration: none;
-        }
-        
-        .footer-B-links a:hover {
-            text-decoration: underline;
-        }
-        
-        /* Responsive styles */
-        @media (max-width: 768px) {
-            .footer-A, .footer-B {
-                flex-direction: column;
-                align-items: flex-start;
-            }
-        
-            .footerA-icons ul {
-                flex-direction: row;
-                justify-content: flex-start;
-                margin-bottom: 10px;
-            }
-        
-            .footer-B-addContent {
-                flex-wrap: wrap;
-                justify-content: flex-start;
-            }
-        
-            .footer-B-addContent-div {
-                margin-bottom: 10px;
-                width: 45%;
-            }
-        
-            .footer-B-links {
-                display: flex;
-                flex-wrap: wrap;
-            }
-        
-            .footer-B-links a {
-                margin-bottom: 10px;
-            }
-        }
-        
-        /* Additional styles for smaller screens */
-        @media (max-width: 480px) {
-            .footer-B-addContent-div {
-                width: 100%;
-            }
-        
-            .footer-B-page-p1 {
-                font-size: 12px;
-            }
-        }
-        </style>
+/*                   footer section starteddddd */
+
+.footer{
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+  
+  }
+  .fa {
+    padding: 7px;
+    font-size: 15px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+  
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+  
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  .fa-youtube {
+    background: #bb0000;
+    color: white;
+  }
+  .fa-instagram {
+    background: #125688;
+    color: white;
+  }
+                /* footer A section is started */
+  .footer-A{
+    width: 100%;
+    height: 10%;
+    background-color:rgb(208, 211, 212 );
+    justify-content: center;
+    align-items: center;
+    margin-bottom:3px;
+    position: relative;
+  }
+  .footerA-icons{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding-top:20px;
+  
+  }
+  .small-bold-text {
+    font-weight: 600; 
+    font-size: 15px;   
+  }
+  .footerA-icons ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+  }
+  .footerA-icons ul li {
+    margin: 0 3px; 
+  }
+  .footer-A-page{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+   
+  }
+  /*                    footer b section starting */
+  .footer-B{
+    background-color: #405788;
+    height: 90%;
+    
+  }
+  
+  .footer-B-page{
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+  
+  }
+  .footer-B-addContent{
+    display: flex;
+    
+    gap: 10px;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+    padding: -40px;
+   
+  }
+  .footer-B-addContent-div{
+    background-color: white;
+    height: 50px;
+    border-radius: 6px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+  .footer-B-addcontent-div-1{
+    width: 65px;
+  }
+  .footer-B-addcontent-div-2{
+  width: 120px;
+  }
+  .footer-B-addcontent-div-3{
+    width: 105px;
+  }
+  .footer-B-addcontent-div-4{
+    width: 80px;
+  }
+  .footer-B-addcontent-div-5{
+    width: 80px;
+  }
+  .footer-B-addcontent-div-6{
+    width: 115px;
+  }
+  .footer-B-addcontent-div-7{
+    width: 125px;
+  }
+  
+  
+  .footer-B-logo{
+    height:40px;
+    border-radius:5px;
+  
+  }
+  .footer-B-links{
+    display: flex;
+    justify-content: center;
+    color : white;
+  }
+  .footer-B-links a{
+    color: white;
+    position: relative;
+    text-decoration: none;
+    font-size: small;
+    margin : 0 10px;
+    font-weight: 600;
+  
+  }
+  
+  .footer-B-links a:not(:last-child)::after {
+    content: "|"; 
+    position: absolute;
+    right: -10;
+    color: white; 
+    padding-left: 10px;
+  }
+
+  /* Base styles are for desktop by default */
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .footer-A, .footer-B {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    
+    .footerA-icons ul {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .footer-B-addContent {
+      flex-direction: column;
+      gap: 15px;
+    }
+    
+    .footer-B-addContent-div {
+      width: 100%;
+      max-width: 250px;
+      margin-bottom: 10px;
+    }
+    
+    .footer-B-logo {
+      height: auto;
+      width: 100%;
+      max-width: 100px;
+    }
+    
+    .footer-B-links {
+      flex-direction: column;
+      gap: 5px;
+    }
+    
+    .footer-B-links a:not(:last-child)::after {
+      content: none; 
+    }
+    
+    .footer-B-page-p {
+      font-size: 14px;
+      padding: 0 10px;
+    }
+  }
+  
+  /* Tablet Styles */
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .footer-A, .footer-B {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .footerA-icons ul {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    
+    .footer-B-addContent {
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    
+    .footer-B-addContent-div {
+      flex: 1 1 45%;
+      max-width: 150px;
+    }
+    
+    .footer-B-links {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    
+    .footer-B-page-p {
+      font-size: 15px;
+      padding: 0 10px;
+    }
+  }
+  
+    </style>
 </head>
 <body>
     <div class="footer">
+        <!-- starting footer _A -->
         <div class="footer-A">
             <div class="footerA-icons">
                 <ul>
@@ -107,41 +257,54 @@
                     <li><a href="#" class="fa fa-instagram"></a></li>
                 </ul>
             </div>
-    
+        
             <div class="footer-A-page">
                 <p class="small-bold-text">This site is designed, developed & hosted by National Informatics Centre, Ministry of Electronics & IT (MeitY), Government of India and Content owned by Department of Administrative Reforms & Public Grievances.</p>
             </div> 
+    
         </div> 
-    
+        
+
         <div class="footer-B">
-            <div class="footer-B-page">
-                <p class="footer-B-page-p footer-B-page-p1">Portal is Compatible with all major Browsers like Google Chrome, Mozilla Firefox, Microsoft Edge, Safari, etc. <br>
-                    <span> Best Viewed in 1440 x 900 resolution </span>
-                </p>
-            </div>
-    
-            <div class="footer-B-addContent">
-                <div class="footer-B-addContent-div footer-B-addcontent-div-1"><a class="gov_logo" target="_blank" href="https://gandhi.gov.in/"><img src="https://pgportal.gov.in/Images/gandhi-150.jpg" class="footer-B-logo footer-B-logo-1" alt=""></a></div> 
-                <div class="footer-B-addContent-div footer-B-addcontent-div-2"><a class="indgov_logo" target="_blank" href="https://digitalindiaawards.gov.in"><img src="https://pgportal.gov.in/Images/digi-awards.jpg" class="footer-B-logo footer-B-logo-2" alt=""></a></div> 
-                <div class="footer-B-addContent-div footer-B-addcontent-div-3"><a class="digi_logo" target="_blank" href="http://goidirectory.nic.in"><img src="https://pgportal.gov.in/Images/web-directory.jpg" alt="footer-B-logo footer-B-logo-3"></a></div> 
-                <div class="footer-B-addContent-div footer-B-addcontent-div-4"> <a class="digi_logo" target="_blank" href="http://www.makeinindia.com"><img src="https://pgportal.gov.in/Images/made-in-india.jpg" class="footer-B-logo footer-B-logo-4" alt="nic"></a></div>
-                <div class="footer-B-addContent-div footer-B-addcontent-div-5"><a class="digi_logo" target="_blank" href="https://www.digitalindia.gov.in/"><img src="https://pgportal.gov.in/Images/digital-india-logo.jpg" class="footer-B-logo footer-B-logo-5" alt="digital-India"></a></div> 
-                <div class="footer-B-addContent-div footer-B-addcontent-div-6"><a class="indgov_logo" target="_blank" href="https://www.india.gov.in/"><img src="https://pgportal.gov.in/Images/india-gov-logo.jpg" class="footer-B-logo footer-B-logo-6" alt=""></a></div> 
-                <div class="footer-B-addContent-div footer-B-addcontent-div-7"><a class="digi_logo" target="_blank" href="https://www.nic.in/"><img src="https://pgportal.gov.in/Images/niclogo.jpg" class="footer-B-logo footer-B-logo-7" alt="nic"></a></div>  
-            </div>
             
-            <div class="footer-B-links">
-                <a href="/Home/Disclaimer">Disclaimer</a>
-                <a href="/Home/WebsitePolicies">Website Policies</a>
-                <a href="https://darpg.gov.in/en/web-information-manager" target="_blank">Web Information Manager</a>
-                <a href=""> Version 7.0.01092019.0.0, Copyright ©  2024 </a>
-                <a href="">Last Updated On: 11-06-2024</a>
-                <a href="">Total Visitors : <span class="text-red">2897441</span>  <i class="text-sm">(since 19-01-2024)</i></a>
+               <div class="footer-B-page">
+                <p class="footer-B-page-p footer-B-page-p1 " style="color: #f1ef49; font-size: 15px">
+                    Portal is Compatible with all major Browsers like Google Chrome, Mozilla Firefox, Microsoft Edge, Safari etc. <br>
+                   <span style="margin-left:33%;"> Best Viewed in 1440 x 900 resolution </span>
+                </p>
+                <!-- <p class="footer-B-page-p footer-B-page-p2" style="color: #f1ef49 ; font-size: 15px">Best Viewed in 1440 x 900 resolution</p> -->
+               </div>
+              
+                <div class="footer-B-addContent">
+                   <div class="footer-B-addContent-div footer-B-addcontent-div-1"><a class="gov_logo" target="_blank" href="https://gandhi.gov.in/"><img src="https://pgportal.gov.in/Images/gandhi-150.jpg" class="footer-B-logo footer-B-logo-1" alt=""></a></div> 
+                   <div class="footer-B-addContent-div footer-B-addcontent-div-2"><a class="indgov_logo" target="_blank" href="https://digitalindiaawards.gov.in"><img src="https://pgportal.gov.in/Images/digi-awards.jpg" class="footer-B-logo footer-B-logo-2" alt=""></a></div> 
+                   <div class="footer-B-addContent-div footer-B-addcontent-div-3"><a class="digi_logo" target="_blank" href="http://goidirectory.nic.in"><img src="https://pgportal.gov.in/Images/web-directory.jpg" alt="footer-B-logo footer-B-logo-3"></a></div> 
+                   <div class="footer-B-addContent-div footer-B-addcontent-div-4"> <a class="digi_logo" target="_blank" href="http://www.makeinindia.com"><img src="https://pgportal.gov.in/Images/made-in-india.jpg" class="footer-B-logo footer-B-logo-4" alt="nic"></a></div>
+                   <div class="footer-B-addContent-div footer-B-addcontent-div-5"><a class="digi_logo" target="_blank" href="https://www.digitalindia.gov.in/"><img src="https://pgportal.gov.in/Images/digital-india-logo.jpg" class="footer-B-logo footer-B-logo-5" alt="digital-India"></a></div> 
+                   <div class="footer-B-addContent-div footer-B-addcontent-div-6"><a class="indgov_logo" target="_blank" href="https://www.india.gov.in/"><img src="https://pgportal.gov.in/Images/india-gov-logo.jpg" class="footer-B-logo footer-B-logo-6" alt=""></a></div> 
+                   <div class="footer-B-addContent-div footer-B-addcontent-div-7"><a class="digi_logo" target="_blank" href="https://www.nic.in/"><img src="https://pgportal.gov.in/Images/niclogo.jpg" class="footer-B-logo footer-B-logo-7" alt="nic"></a></div>  
+                </div>
+                <div class="footer-B-links">
+                    <a href="/Home/Disclaimer">Disclaimer</a>
+                    <a href="/Home/WebsitePolicies">Website Policies</a>
+                    <a href="https://darpg.gov.in/en/web-information-manager" target="_blank">Web Information Manager</a>
+                    <a href=""> Version 7.0.01092019.0.0, Copyright ©  2024 </a>
+                    <a href="">Last Updated On: 11-06-2024</a>
+                    <a href="">Total Visitors : <span class="text-red">2897441</span>  <i class="text-sm">(since 19-01-2024)</i></a>
+                </div>
+               
+            
             </div>
-        </div>
     </div>
-    
-   
-    
+</div>
+
+
+
+
+
+
+
+</div>
+
 </body>
 </html>
